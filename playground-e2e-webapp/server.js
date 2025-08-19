@@ -571,6 +571,44 @@ app.get('/dynamic', (req, res) => {
     `);
 });
 
+// Delayed content route (auto-loads delayed content)
+app.get('/delayed', (req, res) => {
+    res.send(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Delayed Content - Selenium Test Playground</title>
+            <link rel="stylesheet" href="/styles.css">
+        </head>
+        <body>
+            <div class="container">
+                <h1>Delayed Content</h1>
+                <div id="delayed-content" data-test="delayed-content">
+                    <p>Loading delayed content...</p>
+                </div>
+                <a href="/">Home</a>
+            </div>
+            <script>
+                // Auto-load delayed content after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('delayed-content').innerHTML = '<p data-test="delayed-text">Delayed content loaded after 3 seconds!</p>';
+                }, 3000);
+            </script>
+        </body>
+        </html>
+    `);
+});
+
+// Flaky endpoint for testing retries
+app.get('/flaky', (req, res) => {
+    // Return error ~50% of the time
+    if (Math.random() < 0.5) {
+        res.status(429).json({ error: "Rate limited" });
+    } else {
+        res.json({ message: "Flaky endpoint success!" });
+    }
+});
+
 // Modals routes
 app.get('/modals', (req, res) => {
     res.send(`
@@ -592,7 +630,7 @@ app.get('/modals', (req, res) => {
                 
                 <div id="myModal" class="modal" data-test="modal">
                     <div class="modal-content">
-                        <span class="close" onclick="closeModal()" data-test="close-modal">&times;</span>
+                        <span class="close" onclick="cancelModal()" data-test="close-modal">&times;</span>
                         <p data-test="modal-text">This is a modal dialog!</p>
                         <button onclick="modalAction()" data-test="modal-action">Modal Action</button>
                     </div>
@@ -610,8 +648,13 @@ app.get('/modals', (req, res) => {
                     document.getElementById('myModal').style.display = 'none';
                 }
                 
+                function cancelModal() {
+                    document.getElementById('result').innerHTML = '<p>Cancel</p>';
+                    closeModal();
+                }
+                
                 function modalAction() {
-                    document.getElementById('result').innerHTML = '<p>Modal action performed!</p>';
+                    document.getElementById('result').innerHTML = '<p>OK</p>';
                     closeModal();
                 }
                 
@@ -846,26 +889,32 @@ app.get('/scroll', (req, res) => {
                 
                 function loadMoreItems() {
                     if (loading) return;
-                    loading = true;
                     
+                    // Stop loading after 25 items total (15 more items)
+                    if (itemCount >= 25) {
+                        document.getElementById('loading').style.display = 'block';
+                        document.getElementById('loading').innerHTML = 'Reached the end';
+                        return;
+                    }
+                    
+                    loading = true;
                     document.getElementById('loading').style.display = 'block';
                     
-                    setTimeout(() => {
-                        const container = document.getElementById('scroll-container');
-                        for (let i = 0; i < 5; i++) {
-                            const item = document.createElement('div');
-                            item.className = 'scroll-item';
-                            item.setAttribute('data-test', 'scroll-item');
-                            item.textContent = 'Item ' + (++itemCount);
-                            container.appendChild(item);
-                        }
-                        document.getElementById('loading').style.display = 'none';
-                        loading = false;
-                    }, 1000);
+                    // Make loading immediate for testing
+                    const container = document.getElementById('scroll-container');
+                    for (let i = 0; i < 5; i++) {
+                        const item = document.createElement('div');
+                        item.className = 'scroll-item';
+                        item.setAttribute('data-test', 'scroll-item');
+                        item.textContent = 'Item ' + (++itemCount);
+                        container.appendChild(item);
+                    }
+                    document.getElementById('loading').style.display = 'none';
+                    loading = false;
                 }
                 
                 window.addEventListener('scroll', function() {
-                    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+                    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
                         loadMoreItems();
                     }
                 });
