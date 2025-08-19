@@ -63,7 +63,7 @@ public class DriverFactory {
             if (headless) {
                 options.addArguments("--headless=new");
             }
-            // Additional arguments for CI environments
+            // CI environment specific arguments
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--disable-gpu");
@@ -72,7 +72,12 @@ public class DriverFactory {
             options.addArguments("--disable-background-timer-throttling");
             options.addArguments("--disable-backgrounding-occluded-windows");
             options.addArguments("--disable-renderer-backgrounding");
+            options.addArguments("--disable-ipc-flooding-protection");
+            options.addArguments("--disable-hang-monitor");
+            options.addArguments("--disable-prompt-on-repost");
+            options.addArguments("--disable-domain-reliability");
             options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--remote-debugging-port=0");
             
             Map<String, Object> prefs = new HashMap<>();
             prefs.put("download.default_directory", downloads);
