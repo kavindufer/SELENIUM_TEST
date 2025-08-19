@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class IframePage extends BasePage {
     private final By frame = By.cssSelector("iframe");
-    private final By button = By.cssSelector("[data-test='frame-btn']");
+    private final By button = By.cssSelector("[data-test='iframe-button']");
     private final By title = By.tagName("h1");
 
     public IframePage(WebDriver driver) {

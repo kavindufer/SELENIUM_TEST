@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class InfiniteScrollPage extends BasePage {
-    private final By items = By.cssSelector("[data-test='item']");
+    private final By items = By.cssSelector("[data-test='scroll-item']");
     private final By status = By.cssSelector("[data-test='status']");
 
     public InfiniteScrollPage(WebDriver driver) {
@@ -13,7 +13,7 @@ public class InfiniteScrollPage extends BasePage {
     }
 
     public InfiniteScrollPage open() {
-        open("/infinite-scroll");
+        open("/scroll");
         return this;
     }
 

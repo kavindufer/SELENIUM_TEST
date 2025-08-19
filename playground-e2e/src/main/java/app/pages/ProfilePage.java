@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ProfilePage extends BasePage {
-    private final By username = By.cssSelector("[data-test='profile-username']");
-    private final By role = By.cssSelector("[data-test='profile-role']");
+    private final By username = By.cssSelector("[data-test='username']");
+    private final By role = By.cssSelector("[data-test='role']");
 
     public ProfilePage(WebDriver driver) {
         super(driver);
