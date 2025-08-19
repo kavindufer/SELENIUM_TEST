@@ -571,6 +571,44 @@ app.get('/dynamic', (req, res) => {
     `);
 });
 
+// Delayed content route (auto-loads delayed content)
+app.get('/delayed', (req, res) => {
+    res.send(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Delayed Content - Selenium Test Playground</title>
+            <link rel="stylesheet" href="/styles.css">
+        </head>
+        <body>
+            <div class="container">
+                <h1>Delayed Content</h1>
+                <div id="delayed-content" data-test="delayed-content">
+                    <p>Loading delayed content...</p>
+                </div>
+                <a href="/">Home</a>
+            </div>
+            <script>
+                // Auto-load delayed content after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('delayed-content').innerHTML = '<p data-test="delayed-text">Delayed content loaded after 3 seconds!</p>';
+                }, 3000);
+            </script>
+        </body>
+        </html>
+    `);
+});
+
+// Flaky endpoint for testing retries
+app.get('/flaky', (req, res) => {
+    // Return error ~50% of the time
+    if (Math.random() < 0.5) {
+        res.status(429).json({ error: "Rate limited" });
+    } else {
+        res.json({ message: "Flaky endpoint success!" });
+    }
+});
+
 // Modals routes
 app.get('/modals', (req, res) => {
     res.send(`

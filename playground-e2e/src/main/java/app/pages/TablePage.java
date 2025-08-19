@@ -7,10 +7,10 @@ import org.openqa.selenium.WebDriver;
 public class TablePage extends BasePage {
     private final By filter = By.cssSelector("[data-test='filter-input']");
     private final By sortName = By.cssSelector("[data-test='sort-name']");
-    private final By sortPrice = By.cssSelector("[data-test='sort-price']");
-    private final By next = By.cssSelector("[data-test='next']");
-    private final By prev = By.cssSelector("[data-test='prev']");
-    private final By total = By.cssSelector("[data-test='total']");
+    private final By sortPrice = By.cssSelector("[data-test='sort-salary']");
+    private final By next = By.cssSelector("[data-test='next-page']");
+    private final By prev = By.cssSelector("[data-test='prev-page']");
+    private final By total = By.cssSelector("[data-test='page-info']");
 
     public TablePage(WebDriver driver) {
         super(driver);
