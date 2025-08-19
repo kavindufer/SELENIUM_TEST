@@ -592,7 +592,7 @@ app.get('/modals', (req, res) => {
                 
                 <div id="myModal" class="modal" data-test="modal">
                     <div class="modal-content">
-                        <span class="close" onclick="closeModal()" data-test="close-modal">&times;</span>
+                        <span class="close" onclick="cancelModal()" data-test="close-modal">&times;</span>
                         <p data-test="modal-text">This is a modal dialog!</p>
                         <button onclick="modalAction()" data-test="modal-action">Modal Action</button>
                     </div>
@@ -610,8 +610,13 @@ app.get('/modals', (req, res) => {
                     document.getElementById('myModal').style.display = 'none';
                 }
                 
+                function cancelModal() {
+                    document.getElementById('result').innerHTML = '<p>Cancel</p>';
+                    closeModal();
+                }
+                
                 function modalAction() {
-                    document.getElementById('result').innerHTML = '<p>Modal action performed!</p>';
+                    document.getElementById('result').innerHTML = '<p>OK</p>';
                     closeModal();
                 }
                 
@@ -848,10 +853,19 @@ app.get('/scroll', (req, res) => {
                     if (loading) return;
                     loading = true;
                     
+                    // Stop loading after 25 items total (15 more items)
+                    if (itemCount >= 25) {
+                        document.getElementById('loading').style.display = 'block';
+                        document.getElementById('loading').innerHTML = 'Reached the end';
+                        return;
+                    }
+                    
                     document.getElementById('loading').style.display = 'block';
                     
+                    // Make loading faster for testing
                     setTimeout(() => {
                         const container = document.getElementById('scroll-container');
+                        
                         for (let i = 0; i < 5; i++) {
                             const item = document.createElement('div');
                             item.className = 'scroll-item';
@@ -861,11 +875,11 @@ app.get('/scroll', (req, res) => {
                         }
                         document.getElementById('loading').style.display = 'none';
                         loading = false;
-                    }, 1000);
+                    }, 100); // Reduced from 1000ms to 100ms
                 }
                 
                 window.addEventListener('scroll', function() {
-                    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+                    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
                         loadMoreItems();
                     }
                 });
