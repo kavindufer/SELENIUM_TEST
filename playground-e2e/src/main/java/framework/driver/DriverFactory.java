@@ -1,7 +1,6 @@
 package framework.driver;
 
 import framework.config.Config;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -64,21 +63,33 @@ public class DriverFactory {
             if (headless) {
                 options.addArguments("--headless=new");
             }
+            // Additional arguments for CI environments
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--disable-extensions");
+            options.addArguments("--disable-plugins");
+            options.addArguments("--disable-background-timer-throttling");
+            options.addArguments("--disable-backgrounding-occluded-windows");
+            options.addArguments("--disable-renderer-backgrounding");
+            options.addArguments("--remote-allow-origins=*");
+            
             Map<String, Object> prefs = new HashMap<>();
             prefs.put("download.default_directory", downloads);
             prefs.put("download.prompt_for_download", false);
             options.setExperimentalOption("prefs", prefs);
-            options.addArguments("--remote-allow-origins=*");
             return options;
         }
     }
 
     private static WebDriver createLocalDriver(String browser, MutableCapabilities options) {
         if ("firefox".equalsIgnoreCase(browser)) {
-            WebDriverManager.firefoxdriver().setup();
+            // Skip WebDriverManager for Firefox in CI environment to avoid network issues
+            // Assumes geckodriver is available in PATH
             return new FirefoxDriver((FirefoxOptions) options);
         } else {
-            WebDriverManager.chromedriver().setup();
+            // Skip WebDriverManager for Chrome in CI environment to avoid network issues
+            // Assumes chromedriver is available in PATH  
             return new ChromeDriver((ChromeOptions) options);
         }
     }
