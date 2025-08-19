@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: app.tests.e2e.E2E_UserRoleAccessTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.022 s -- in app.tests.e2e.E2E_UserRoleAccessTest

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="3" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-19T21:09:53 UTC" name="playground" finished-at="2025-08-19T21:10:22 UTC" duration-ms="28857">
+    <groups>
+      <group name="smoke">
+        <method signature="Smoke_Files_UploadDownloadTest.uploadAndDownload()[pri:0, instance:app.tests.smoke.Smoke_Files_UploadDownloadTest@1a18644]" name="uploadAndDownload" class="app.tests.smoke.Smoke_Files_UploadDownloadTest"/>
+        <method signature="Smoke_Login_AdminAccessTest.adminCanAccessAdminPage()[pri:0, instance:app.tests.smoke.Smoke_Login_AdminAccessTest@37d4349f]" name="adminCanAccessAdminPage" class="app.tests.smoke.Smoke_Login_AdminAccessTest"/>
+      </group> <!-- smoke -->
+      <group name="e2e">
+        <method signature="E2E_Dynamic_Delayed_FlakyTest.dynamicDelayedFlaky()[pri:0, instance:app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest@51c668e3]" name="dynamicDelayedFlaky" class="app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest"/>
+        <method signature="E2E_FormValidationAndSuccessTest.formValidationAndSuccess()[pri:0, instance:app.tests.e2e.E2E_FormValidationAndSuccessTest@6fdbe764]" name="formValidationAndSuccess" class="app.tests.e2e.E2E_FormValidationAndSuccessTest"/>
+        <method signature="E2E_Iframe_ShadowDomTest.iframeAndShadowDom()[pri:0, instance:app.tests.e2e.E2E_Iframe_ShadowDomTest@52719fb6]" name="iframeAndShadowDom" class="app.tests.e2e.E2E_Iframe_ShadowDomTest"/>
+        <method signature="E2E_InfiniteScroll_DragDrop_CsrfTest.complexFlows()[pri:0, instance:app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest@4a883b15]" name="complexFlows" class="app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest"/>
+        <method signature="E2E_Modal_AlertsTest.modalAndAlerts()[pri:0, instance:app.tests.e2e.E2E_Modal_AlertsTest@3012646b]" name="modalAndAlerts" class="app.tests.e2e.E2E_Modal_AlertsTest"/>
+        <method signature="E2E_Table_FilterSortPaginateTest.tableInteractions()[pri:0, instance:app.tests.e2e.E2E_Table_FilterSortPaginateTest@2e6a8155]" name="tableInteractions" class="app.tests.e2e.E2E_Table_FilterSortPaginateTest"/>
+        <method signature="E2E_UserRoleAccessTest.userAndAdminAccess()[pri:0, instance:app.tests.e2e.E2E_UserRoleAccessTest@6221a451]" name="userAndAdminAccess" class="app.tests.e2e.E2E_UserRoleAccessTest"/>
+      </group> <!-- e2e -->
+    </groups>
+    <test started-at="2025-08-19T21:09:53 UTC" name="smoke" finished-at="2025-08-19T21:10:03 UTC" duration-ms="9434">
+      <class name="app.tests.smoke.Smoke_Login_AdminAccessTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.smoke.Smoke_Login_AdminAccessTest@37d4349f]" started-at="2025-08-19T21:09:53 UTC" name="setUp" finished-at="2025-08-19T21:09:56 UTC" duration-ms="3059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="adminCanAccessAdminPage()[pri:0, instance:app.tests.smoke.Smoke_Login_AdminAccessTest@37d4349f]" started-at="2025-08-19T21:09:56 UTC" name="adminCanAccessAdminPage" finished-at="2025-08-19T21:09:57 UTC" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanAccessAdminPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.smoke.Smoke_Login_AdminAccessTest@37d4349f]" started-at="2025-08-19T21:09:57 UTC" name="tearDown" finished-at="2025-08-19T21:09:58 UTC" duration-ms="697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanAccessAdminPage status=SUCCESS method=Smoke_Login_AdminAccessTest.adminCanAccessAdminPage()[pri:0, instance:app.tests.smoke.Smoke_Login_AdminAccessTest@37d4349f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.smoke.Smoke_Login_AdminAccessTest -->
+      <class name="app.tests.smoke.Smoke_Files_UploadDownloadTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.smoke.Smoke_Files_UploadDownloadTest@1a18644]" started-at="2025-08-19T21:09:53 UTC" name="setUp" finished-at="2025-08-19T21:09:56 UTC" duration-ms="2501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="uploadAndDownload()[pri:0, instance:app.tests.smoke.Smoke_Files_UploadDownloadTest@1a18644]" started-at="2025-08-19T21:09:56 UTC" name="uploadAndDownload" finished-at="2025-08-19T21:10:02 UTC" duration-ms="6185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadAndDownload -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.smoke.Smoke_Files_UploadDownloadTest@1a18644]" started-at="2025-08-19T21:10:02 UTC" name="tearDown" finished-at="2025-08-19T21:10:03 UTC" duration-ms="651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadAndDownload status=SUCCESS method=Smoke_Files_UploadDownloadTest.uploadAndDownload()[pri:0, instance:app.tests.smoke.Smoke_Files_UploadDownloadTest@1a18644] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.smoke.Smoke_Files_UploadDownloadTest -->
+    </test> <!-- smoke -->
+    <test started-at="2025-08-19T21:10:03 UTC" name="e2e" finished-at="2025-08-19T21:10:22 UTC" duration-ms="19407">
+      <class name="app.tests.e2e.E2E_Iframe_ShadowDomTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.e2e.E2E_Iframe_ShadowDomTest@52719fb6]" started-at="2025-08-19T21:10:09 UTC" name="setUp" finished-at="2025-08-19T21:10:11 UTC" duration-ms="1616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="iframeAndShadowDom()[pri:0, instance:app.tests.e2e.E2E_Iframe_ShadowDomTest@52719fb6]" started-at="2025-08-19T21:10:11 UTC" name="iframeAndShadowDom" finished-at="2025-08-19T21:10:21 UTC" duration-ms="10569" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: my-field (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 6.11.0-1018-azure, moz:processID: 11333, moz:profile: /tmp/rust_mozprofileRLLDZt, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: 714638a1-f265-446b-9bb0-4a02c9f64e06]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: my-field (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 6.11.0-1018-azure, moz:processID: 11333, moz:profile: /tmp/rust_mozprofileRLLDZt, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: 714638a1-f265-446b-9bb0-4a02c9f64e06
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at framework.waits.Waits.visible(Waits.java:25)
+at framework.base.BasePage.find(BasePage.java:28)
+at app.pages.ShadowDomPage.shadowRoot(ShadowDomPage.java:23)
+at app.pages.ShadowDomPage.setField(ShadowDomPage.java:28)
+at app.tests.e2e.E2E_Iframe_ShadowDomTest.iframeAndShadowDom(E2E_Iframe_ShadowDomTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframeAndShadowDom -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.e2e.E2E_Iframe_ShadowDomTest@52719fb6]" started-at="2025-08-19T21:10:21 UTC" name="tearDown" finished-at="2025-08-19T21:10:22 UTC" duration-ms="755" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=iframeAndShadowDom status=FAILURE method=E2E_Iframe_ShadowDomTest.iframeAndShadowDom()[pri:0, instance:app.tests.e2e.E2E_Iframe_ShadowDomTest@52719fb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.e2e.E2E_Iframe_ShadowDomTest -->
+      <class name="app.tests.e2e.E2E_Modal_AlertsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.e2e.E2E_Modal_AlertsTest@3012646b]" started-at="2025-08-19T21:10:18 UTC" name="setUp" finished-at="2025-08-19T21:10:20 UTC" duration-ms="2330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="modalAndAlerts()[pri:0, instance:app.tests.e2e.E2E_Modal_AlertsTest@3012646b]" started-at="2025-08-19T21:10:20 UTC" name="modalAndAlerts" finished-at="2025-08-19T21:10:21 UTC" duration-ms="481" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expecting actual:
+  "Modal action performed!"
+to contain:
+  "OK" ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expecting actual:
+  "Modal action performed!"
+to contain:
+  "OK" 
+at framework.base.BasePage.assertText(BasePage.java:42)
+at app.pages.ModalPage.assertResult(ModalPage.java:33)
+at app.tests.e2e.E2E_Modal_AlertsTest.modalAndAlerts(E2E_Modal_AlertsTest.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modalAndAlerts -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.e2e.E2E_Modal_AlertsTest@3012646b]" started-at="2025-08-19T21:10:21 UTC" name="tearDown" finished-at="2025-08-19T21:10:21 UTC" duration-ms="805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=modalAndAlerts status=FAILURE method=E2E_Modal_AlertsTest.modalAndAlerts()[pri:0, instance:app.tests.e2e.E2E_Modal_AlertsTest@3012646b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.e2e.E2E_Modal_AlertsTest -->
+      <class name="app.tests.e2e.E2E_Table_FilterSortPaginateTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.e2e.E2E_Table_FilterSortPaginateTest@2e6a8155]" started-at="2025-08-19T21:10:03 UTC" name="setUp" finished-at="2025-08-19T21:10:08 UTC" duration-ms="5280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tableInteractions()[pri:0, instance:app.tests.e2e.E2E_Table_FilterSortPaginateTest@2e6a8155]" started-at="2025-08-19T21:10:08 UTC" name="tableInteractions" finished-at="2025-08-19T21:10:19 UTC" duration-ms="10808" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-test='sort-price'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 6.11.0-1018-azure, moz:processID: 10201, moz:profile: /tmp/rust_mozprofiledNwQav, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: 3ad22454-5aa4-432a-ba40-f2f956341ca0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-test='sort-price'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 6.11.0-1018-azure, moz:processID: 10201, moz:profile: /tmp/rust_mozprofiledNwQav, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: 3ad22454-5aa4-432a-ba40-f2f956341ca0
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at framework.waits.Waits.visible(Waits.java:25)
+at framework.base.BasePage.find(BasePage.java:28)
+at framework.base.BasePage.click(BasePage.java:32)
+at app.pages.TablePage.sortBy(TablePage.java:32)
+at app.tests.e2e.E2E_Table_FilterSortPaginateTest.tableInteractions(E2E_Table_FilterSortPaginateTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tableInteractions -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.e2e.E2E_Table_FilterSortPaginateTest@2e6a8155]" started-at="2025-08-19T21:10:19 UTC" name="tearDown" finished-at="2025-08-19T21:10:20 UTC" duration-ms="1328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tableInteractions status=FAILURE method=E2E_Table_FilterSortPaginateTest.tableInteractions()[pri:0, instance:app.tests.e2e.E2E_Table_FilterSortPaginateTest@2e6a8155] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.e2e.E2E_Table_FilterSortPaginateTest -->
+      <class name="app.tests.e2e.E2E_FormValidationAndSuccessTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.e2e.E2E_FormValidationAndSuccessTest@6fdbe764]" started-at="2025-08-19T21:10:03 UTC" name="setUp" finished-at="2025-08-19T21:10:05 UTC" duration-ms="2431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="formValidationAndSuccess()[pri:0, instance:app.tests.e2e.E2E_FormValidationAndSuccessTest@6fdbe764]" started-at="2025-08-19T21:10:05 UTC" name="formValidationAndSuccess" finished-at="2025-08-19T21:10:17 UTC" duration-ms="11955" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-test='error'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 6.11.0-1018-azure, moz:processID: 10175, moz:profile: /tmp/rust_mozprofileRC8DZs, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: 0d718639-9ced-461e-80f9-a5a90ea103f1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-test='error'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 6.11.0-1018-azure, moz:processID: 10175, moz:profile: /tmp/rust_mozprofileRC8DZs, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: 0d718639-9ced-461e-80f9-a5a90ea103f1
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at framework.waits.Waits.visible(Waits.java:25)
+at framework.base.BasePage.find(BasePage.java:28)
+at app.pages.FormsPage.errorMessage(FormsPage.java:38)
+at app.tests.e2e.E2E_FormValidationAndSuccessTest.formValidationAndSuccess(E2E_FormValidationAndSuccessTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formValidationAndSuccess -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.e2e.E2E_FormValidationAndSuccessTest@6fdbe764]" started-at="2025-08-19T21:10:17 UTC" name="tearDown" finished-at="2025-08-19T21:10:18 UTC" duration-ms="730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=formValidationAndSuccess status=FAILURE method=E2E_FormValidationAndSuccessTest.formValidationAndSuccess()[pri:0, instance:app.tests.e2e.E2E_FormValidationAndSuccessTest@6fdbe764] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.e2e.E2E_FormValidationAndSuccessTest -->
+      <class name="app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest@51c668e3]" started-at="2025-08-19T21:10:03 UTC" name="setUp" finished-at="2025-08-19T21:10:06 UTC" duration-ms="3632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dynamicDelayedFlaky()[pri:0, instance:app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest@51c668e3]" started-at="2025-08-19T21:10:06 UTC" name="dynamicDelayedFlaky" finished-at="2025-08-19T21:10:17 UTC" duration-ms="10923" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-test='delayed-text'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 6.11.0-1018-azure, moz:processID: 10208, moz:profile: /tmp/rust_mozprofileQVSfxC, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: a7e39523-47d0-4d0b-8cf5-63f6a2bae055]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-test='delayed-text'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 6.11.0-1018-azure, moz:processID: 10208, moz:profile: /tmp/rust_mozprofileQVSfxC, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: a7e39523-47d0-4d0b-8cf5-63f6a2bae055
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at framework.waits.Waits.visible(Waits.java:25)
+at app.pages.DynamicPage.openDelayed(DynamicPage.java:31)
+at app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest.dynamicDelayedFlaky(E2E_Dynamic_Delayed_FlakyTest.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicDelayedFlaky -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest@51c668e3]" started-at="2025-08-19T21:10:17 UTC" name="tearDown" finished-at="2025-08-19T21:10:18 UTC" duration-ms="739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dynamicDelayedFlaky status=FAILURE method=E2E_Dynamic_Delayed_FlakyTest.dynamicDelayedFlaky()[pri:0, instance:app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest@51c668e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.e2e.E2E_Dynamic_Delayed_FlakyTest -->
+      <class name="app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest@4a883b15]" started-at="2025-08-19T21:10:18 UTC" name="setUp" finished-at="2025-08-19T21:10:21 UTC" duration-ms="2622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="complexFlows()[pri:0, instance:app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest@4a883b15]" started-at="2025-08-19T21:10:21 UTC" name="complexFlows" finished-at="2025-08-19T21:10:21 UTC" duration-ms="246" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expecting actual:
+  "Loading more items..."
+to contain:
+  "end" ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expecting actual:
+  "Loading more items..."
+to contain:
+  "end" 
+at app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest.complexFlows(E2E_InfiniteScroll_DragDrop_CsrfTest.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- complexFlows -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest@4a883b15]" started-at="2025-08-19T21:10:21 UTC" name="tearDown" finished-at="2025-08-19T21:10:22 UTC" duration-ms="821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=complexFlows status=FAILURE method=E2E_InfiniteScroll_DragDrop_CsrfTest.complexFlows()[pri:0, instance:app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest@4a883b15] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.e2e.E2E_InfiniteScroll_DragDrop_CsrfTest -->
+      <class name="app.tests.e2e.E2E_UserRoleAccessTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:app.tests.e2e.E2E_UserRoleAccessTest@6221a451]" started-at="2025-08-19T21:10:03 UTC" name="setUp" finished-at="2025-08-19T21:10:07 UTC" duration-ms="4385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userAndAdminAccess()[pri:0, instance:app.tests.e2e.E2E_UserRoleAccessTest@6221a451]" started-at="2025-08-19T21:10:07 UTC" name="userAndAdminAccess" finished-at="2025-08-19T21:10:08 UTC" duration-ms="1299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAndAdminAccess -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:app.tests.e2e.E2E_UserRoleAccessTest@6221a451]" started-at="2025-08-19T21:10:08 UTC" name="tearDown" finished-at="2025-08-19T21:10:09 UTC" duration-ms="772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userAndAdminAccess status=SUCCESS method=E2E_UserRoleAccessTest.userAndAdminAccess()[pri:0, instance:app.tests.e2e.E2E_UserRoleAccessTest@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.tests.e2e.E2E_UserRoleAccessTest -->
+    </test> <!-- e2e -->
+  </suite> <!-- playground -->
+</testng-results>

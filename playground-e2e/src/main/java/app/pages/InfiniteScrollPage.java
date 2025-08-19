@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class InfiniteScrollPage extends BasePage {
     private final By items = By.cssSelector("[data-test='scroll-item']");
-    private final By status = By.cssSelector("[data-test='status']");
+    private final By status = By.cssSelector("[data-test='loading']");
 
     public InfiniteScrollPage(WebDriver driver) {
         super(driver);

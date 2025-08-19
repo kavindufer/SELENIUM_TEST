@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class TablePage extends BasePage {
-    private final By filter = By.cssSelector("[data-test='filter']");
+    private final By filter = By.cssSelector("[data-test='filter-input']");
     private final By sortName = By.cssSelector("[data-test='sort-name']");
     private final By sortPrice = By.cssSelector("[data-test='sort-price']");
     private final By next = By.cssSelector("[data-test='next']");

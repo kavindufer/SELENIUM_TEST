@@ -17,7 +17,7 @@ public class AdminPage extends BasePage {
     }
 
     public void assertForbidden() {
-        assertText(body, "403");
+        assertText(body, "Access denied");
     }
 
     public void assertAdminPage() {

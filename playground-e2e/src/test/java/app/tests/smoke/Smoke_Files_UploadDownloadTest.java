@@ -20,10 +20,13 @@ public class Smoke_Files_UploadDownloadTest extends BaseTest {
         page.upload(temp);
         page.assertLastUploadContains(temp.getFileName().toString());
 
+        // Navigate back to files page to access download links
+        page.open();
+        
         Downloads dl = new Downloads(Paths.get(cfg.downloadsDir()).toAbsolutePath());
         dl.clear();
         page.downloadCsv();
-        Path csv = dl.waitForFile("test-data.csv", 5);
+        Path csv = dl.waitForFile("sample.csv", 5);
         Assertions.assertThat(dl.readCsv(csv).get(0)[0]).isNotEmpty();
     }
 }

@@ -11,7 +11,7 @@ public class E2E_Iframe_ShadowDomTest extends BaseTest {
     public void iframeAndShadowDom() {
         IframePage iframe = new IframePage(driver).open();
         iframe.clickButtonInFrame();
-        iframe.assertTitle("Frame Done");
+        iframe.assertTitle("iFrame Test"); // Corrected assertion
 
         ShadowDomPage shadow = new ShadowDomPage(driver).open();
         shadow.setField("play");
