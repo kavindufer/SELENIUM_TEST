@@ -77,7 +77,13 @@ public class DriverFactory {
             options.addArguments("--disable-prompt-on-repost");
             options.addArguments("--disable-domain-reliability");
             options.addArguments("--remote-allow-origins=*");
-            options.addArguments("--remote-debugging-port=0");
+            // Disable DevTools to avoid CDP version compatibility warnings with Chrome v139
+            options.addArguments("--disable-dev-tools");
+            options.addArguments("--disable-logging");
+            options.addArguments("--disable-web-security");
+            options.addArguments("--disable-features=VizDisplayCompositor");
+            options.setExperimentalOption("useAutomationExtension", false);
+            options.setExperimentalOption("excludeSwitches", java.util.Arrays.asList("enable-automation"));
             
             Map<String, Object> prefs = new HashMap<>();
             prefs.put("download.default_directory", downloads);
