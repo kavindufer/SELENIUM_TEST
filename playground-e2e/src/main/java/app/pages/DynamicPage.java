@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import java.io.IOException;
 
 public class DynamicPage extends BasePage {
-    private final By loadBtn = By.cssSelector("[data-test='load']");
-    private final By items = By.cssSelector("[data-test='item']");
+    private final By loadBtn = By.cssSelector("[data-test='load-btn']");
+    private final By items = By.cssSelector("[data-test='loaded-text']");
     private final By delayedText = By.cssSelector("[data-test='delayed-text']");
 
     public DynamicPage(WebDriver driver) {
@@ -18,7 +18,7 @@ public class DynamicPage extends BasePage {
     }
 
     public void openDynamicLoading() {
-        open("/dynamic-loading");
+        open("/dynamic");
     }
 
     public void startLoading() {

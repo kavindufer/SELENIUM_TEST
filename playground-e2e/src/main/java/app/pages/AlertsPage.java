@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class AlertsPage extends BasePage {
-    private final By alertBtn = By.cssSelector("[data-test='alert']");
-    private final By confirmBtn = By.cssSelector("[data-test='confirm']");
-    private final By promptBtn = By.cssSelector("[data-test='prompt']");
+    private final By alertBtn = By.cssSelector("[data-test='alert-btn']");
+    private final By confirmBtn = By.cssSelector("[data-test='confirm-btn']");
+    private final By promptBtn = By.cssSelector("[data-test='prompt-btn']");
     private final By result = By.cssSelector("[data-test='alert-result']");
 
     public AlertsPage(WebDriver driver) {
@@ -16,7 +16,7 @@ public class AlertsPage extends BasePage {
     }
 
     public AlertsPage open() {
-        open("/alert");
+        open("/alerts");
         return this;
     }
 

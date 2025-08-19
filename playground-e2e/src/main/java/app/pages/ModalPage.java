@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 
 public class ModalPage extends BasePage {
     private final By open = By.cssSelector("[data-test='open-modal']");
-    private final By ok = By.cssSelector("[data-test='modal-ok']");
-    private final By cancel = By.cssSelector("[data-test='modal-cancel']");
+    private final By ok = By.cssSelector("[data-test='modal-action']");
+    private final By cancel = By.cssSelector("[data-test='close-modal']");
     private final By result = By.cssSelector("[data-test='modal-result']");
 
     public ModalPage(WebDriver driver) {
@@ -15,7 +15,7 @@ public class ModalPage extends BasePage {
     }
 
     public ModalPage openPage() {
-        open("/modal");
+        open("/modals");
         return this;
     }
 
