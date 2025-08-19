@@ -19,4 +19,8 @@ public class AdminPage extends BasePage {
     public void assertForbidden() {
         assertText(body, "403");
     }
+
+    public void assertAdminPage() {
+        assertUrlContains("/admin");
+    }
 }

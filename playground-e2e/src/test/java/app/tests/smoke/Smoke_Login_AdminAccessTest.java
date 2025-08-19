@@ -13,6 +13,6 @@ public class Smoke_Login_AdminAccessTest extends BaseTest {
         new LoginPage(driver).open().loginAs("admin", "admin123");
         new ProfilePage(driver).assertRole("admin");
         new AdminPage(driver).open();
-        new AdminPage(driver).assertUrlContains("/admin");
+        new AdminPage(driver).assertAdminPage();
     }
 }
