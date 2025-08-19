@@ -48,3 +48,4 @@ mvn allure:serve
 - For WebDriver manager issues, clear `~/.cache/selenium`.
 - Headless runs may behave differently with iFrames; try `-Dheadless=false` when debugging.
 - File downloads may require additional permissions on CI environments.
+- **CDP Warnings**: Chrome DevTools Protocol warnings have been addressed by disabling DevTools features in Chrome options to maintain compatibility with Selenium 4.20.0.
