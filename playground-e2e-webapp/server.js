@@ -889,7 +889,6 @@ app.get('/scroll', (req, res) => {
                 
                 function loadMoreItems() {
                     if (loading) return;
-                    loading = true;
                     
                     // Stop loading after 25 items total (15 more items)
                     if (itemCount >= 25) {
@@ -898,22 +897,20 @@ app.get('/scroll', (req, res) => {
                         return;
                     }
                     
+                    loading = true;
                     document.getElementById('loading').style.display = 'block';
                     
-                    // Make loading faster for testing
-                    setTimeout(() => {
-                        const container = document.getElementById('scroll-container');
-                        
-                        for (let i = 0; i < 5; i++) {
-                            const item = document.createElement('div');
-                            item.className = 'scroll-item';
-                            item.setAttribute('data-test', 'scroll-item');
-                            item.textContent = 'Item ' + (++itemCount);
-                            container.appendChild(item);
-                        }
-                        document.getElementById('loading').style.display = 'none';
-                        loading = false;
-                    }, 100); // Reduced from 1000ms to 100ms
+                    // Make loading immediate for testing
+                    const container = document.getElementById('scroll-container');
+                    for (let i = 0; i < 5; i++) {
+                        const item = document.createElement('div');
+                        item.className = 'scroll-item';
+                        item.setAttribute('data-test', 'scroll-item');
+                        item.textContent = 'Item ' + (++itemCount);
+                        container.appendChild(item);
+                    }
+                    document.getElementById('loading').style.display = 'none';
+                    loading = false;
                 }
                 
                 window.addEventListener('scroll', function() {

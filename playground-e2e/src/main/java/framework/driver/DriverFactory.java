@@ -12,6 +12,7 @@ import org.openqa.selenium.MutableCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
